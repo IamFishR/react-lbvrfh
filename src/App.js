@@ -1,11 +1,26 @@
-import React from "react";
-import "./style.css";
+import './App.css';
 
-export default function App() {
+// components
+import {Brand, Cta, Navbar} from './components'
+// containers
+import {Blog, Features, Footer, Header, Possibility, WhatGPT3} from './containers'
+
+function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+    <div className="App">
+      <div className='gradient__bg'>
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGPT3 />
+      <Features />
+      <Possibility />
+      <Cta />
+      <Blog />
+      <Footer />
     </div>
   );
 }
+
+export default App;
